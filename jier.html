@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>节日介绍</title>
+    <style>
+        .button-container {
+            gap: 0px;
+            justify-content: center; 
+            display: flex;
+        }
+        .头1{
+            font-size: 50px;
+            color: hsl(0, 84%, 36%);
+            width: 180px;
+            height: 250px;
+            display: flex;
+            align-items: center;              
+            justify-content: center;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b91);
+        }
+        .头2{
+            font-size: 50px;
+            color: hsl(0, 84%, 36%);
+            width: 180px;
+            height: 250px;
+            display: flex;
+            align-items: center;              
+            justify-content: center;
+            background: linear-gradient(45deg, #ffda5f, #feb47b4c);
+        }
+        .头3{
+            font-size: 50px;
+            color: hsl(0, 84%, 36%);
+            width: 180px;
+            height: 250px;
+            display: flex;
+            align-items: center;               
+            justify-content: center;
+            background: linear-gradient(45deg, #34e009, #88fe7b50);
+        }
+        .头4{
+            font-size: 50px;
+            color: hsl(0, 84%, 36%);
+            width: 180px;
+            height: 250px;
+            display: flex;
+            align-items: center;             
+            justify-content: center;
+            background: linear-gradient(45deg, #5fff7f, #dbfe7b8b);
+        }
+        .头5{
+            font-size: 50px;
+            color: hsl(0, 84%, 36%);
+            width: 180px;
+            height: 250px;
+            display: flex;
+            align-items: center;              
+            justify-content: center;
+            background: linear-gradient(45deg, #ff5fe4, #fefe7b5c);
+        }
+        .头6{
+            font-size: 50px;
+            color: hsl(0, 84%, 36%);
+            width: 180px;
+            height: 250px;
+            display: flex;
+            align-items: center;              
+            justify-content: center;
+            background: linear-gradient(45deg, #7c5fff, #fe7bf15e);
+        }
+        .头7{
+            font-size: 50px;
+            color: hsl(0, 84%, 36%);
+            width: 180px;
+            height: 250px;
+            display: flex;
+            align-items: center;              
+            justify-content: center;
+            background: linear-gradient(45deg, #eaff5f, #ddfe7b51);
+        }
+        .头8{
+            font-size: 50px;
+            color: hsl(0, 84%, 36%);
+            width: 180px;
+            height: 250px;
+            display: flex;
+            align-items: center;             
+            justify-content: center;
+            background: linear-gradient(45deg, #01f2d262, #feb47b5d);
+        }
+        .头9{
+            font-size: 50px;
+            color: hsl(0, 84%, 36%);
+            width: 180px;
+            height: 250px;
+            display: flex;
+            align-items: center;              
+            justify-content: center;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b52);
+        }
+        .头10{
+            font-size: 50px;
+            color: hsl(0, 84%, 36%);
+            width: 180px;
+            height: 250px;
+            display: flex;
+            align-items: center;               
+            justify-content: center;
+            background: linear-gradient(45deg, #fb0202, #feb47b76);
+        }
+        .头1:hover,.头2:hover,.头3:hover,.头4:hover,.头5:hover,.头6:hover,.头7:hover,.头8:hover,.头9:hover,.头10:hover{
+            transform: translateY(-5px);  
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);  
+        }
+    a {
+        text-decoration: none;
+        }        
+    :root {
+            --primary-color: #ff6b6b;
+            --secondary-color: #ffa726;
+        }
+        .主要习俗,.文化意义,.故事与由来{
+            font-family:"楷体";
+            font-size: 25px;
+        }
+        .古诗{
+            font-family:"楷体";
+            font-size: 40px;
+        }
+        .king1{
+            position: relative;  
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;  
+            background-color: #ffdd93;
+            color: #010101;
+            line-height: 1.6;
+            text-align: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+        }
+        
+        header {
+            color:rgb(0, 0, 0);
+            padding: 16rem 0;
+            text-align:center;
+            box-shadow: 0 4px 12px rgba(9, 1, 1, 0.552);
+            top: 0;
+            z-index: 100;
+            font-size: 20px;
+            font-weight: 500;
+            font-family:"楷体";
+            background-image: url(素材1.jpg);
+            background-repeat: no-repeat;
+            background-position: center 60%;
+            background-size: cover;
+            
+        }
+        
+        .kaishi1 h1 {
+            margin: 0;
+            font-size: 110px;
+            
+        }
+        
+        #miiao1 {
+            font-size: 1rem;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+        
+        .text-with-bg {
+            position: relative;
+            margin: 40px auto;
+            padding: 40px 60px;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 15px;
+            overflow: hidden;
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .text-with-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://ts2.tc.mm.bing.net/th/id/OIP-C.bQWizRYirW9bZ1SPnbSOZgHaJ4?rs=1&pid=ImgDetMain&o=7&rm=3');
+            background-size: cover;          
+            background-position: center center; 
+            background-repeat: no-repeat;     
+            opacity: 0.3;                    
+            z-index: -1;                      
+            filter: brightness(1.1);         
+        }
+        
+        .text-with-bg::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 221, 147, 0.5); 
+            z-index: -1;                      
+        }
+        .节日1{
+            font-family:"楷体";
+            font-size: 60px;
+            background-repeat: no-repeat;
+            background-size: 10% 10%;
+            color: hsl(0, 98%, 50%); 
+            
+        }
+    .春节::before {
+        background-repeat: no-repeat;
+        background-position: center 60%;
+        background-size: cover;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10%;
+        background-image: url(6bff8a70285ec4709d0db98653b4734a3f9bec1984524-rVgDxf.jpg);
+        background-size:contain;
+        background-position: center;
+        opacity: 0.4;  
+        z-index: -1;
+        border-radius: 20px; 
+        }
+        .节日2{
+            font-family:"楷体";
+            font-size: 60px;
+            background-repeat: no-repeat;
+            background-size: 10% 10%;
+            color: hsl(39, 89%, 22%); 
+        }
+    #元宵1::before {
+        background-repeat: no-repeat;
+        background-position: center 60%;
+        background-size: cover;
+        content: '';
+        position: absolute;
+        top: 1;
+        left: 0;
+        width: 100%;
+        height:10%;
+        background-image: url(元宵1.png);
+        background-size:contain;
+        background-position: center;
+        opacity: 0.4;  
+        z-index: -1;
+        border-radius: 20px; 
+        }
+        .节日3{
+            font-family:"楷体";
+            font-size: 60px;
+            background-repeat: no-repeat;
+            background-size: 10% 10%;
+            color: hsl(144, 89%, 22%); 
+        }
+    #清明1::before {
+        background-repeat: no-repeat;
+        background-position: center 60%;
+        background-size: cover;
+        content: '';
+        position: absolute;
+        top: 10;
+        left: 0;
+        width: 100%;
+        height: 10%;
+        background-image: url(清明1.jpg);
+        background-size:contain;
+        background-position: center;
+        opacity: 0.5;  
+        z-index: -1;
+        border-radius: 20px; 
+        }
+        .节日4{
+            font-family:"楷体";
+            font-size: 60px;
+            background-repeat: no-repeat;
+            background-size: 10% 10%;
+            color: hsl(131, 91%, 43%); 
+            
+        }
+    #端午1::before {
+        background-repeat: no-repeat;
+        background-position: center 60%;
+        background-size: cover;
+        content: '';
+        position: absolute;
+        top: 1;
+        left: 0;
+        width: 100%;
+        height:10%;
+        background-image: url(端午.png);
+        background-size:contain;
+        background-position: center;
+        opacity: 0.4;  
+        z-index: -1;
+        border-radius: 20px; 
+        }
+        .节日5{
+            font-family:"楷体";
+            font-size: 60px;
+            background-repeat: no-repeat;
+            background-size: 10% 10%;
+            color: hsl(321, 96%, 55%); 
+        }
+    #七夕1::before {
+        background-repeat: no-repeat;
+        background-position: center 60%;
+        background-size: cover;
+        content: '';
+        position: absolute;
+        top: 1;
+        left: 0;
+        width: 100%;
+        height:10%;
+        background-image: url(七夕.jpg);
+        background-size:contain;
+        background-position: center;
+        opacity: 0.4;  
+        z-index: -1;
+        border-radius: 20px; 
+        }
+        .节日6{
+            font-family:"楷体";
+            font-size: 60px;
+            background-repeat: no-repeat;
+            background-size: 10% 10%;
+            color: hsl(251, 97%, 23%); 
+        }
+    #中元1::before {
+        background-repeat: no-repeat;
+        background-position: center 60%;
+        background-size: cover;
+        content: '';
+        position: absolute;
+        top: 1;
+        left: 0;
+        width: 100%;
+        height:10%;
+        background-image: url(中元.jpeg);
+        background-size:contain;
+        background-position: center;
+        opacity: 0.4;  
+        z-index: -1;
+        border-radius: 20px; 
+        }
+        .节日7{
+            font-family:"楷体";
+            font-size: 60px;
+            background-repeat: no-repeat;
+            background-size: 10% 10%;
+            color: hsl(22, 97%, 41%); 
+        }
+    #中秋1::before {
+        background-repeat: no-repeat;
+        background-position: center 60%;
+        background-size: cover;
+        content: '';
+        position: absolute;
+        top: 1;
+        left: 0;
+        width: 100%;
+        height:10%;
+        background-image: url(中秋1.jpg);
+        background-size:contain;
+        background-position: center;
+        opacity: 0.4;  
+        z-index: -1;
+        border-radius: 20px; 
+        }
+        .节日8{
+            font-family:"楷体";
+            font-size: 60px;
+            background-repeat: no-repeat;
+            background-size: 10% 10%;
+            color: hsl(22, 82%, 34%); 
+        }
+    #重阳1::before {
+        background-repeat: no-repeat;
+        background-position: center 60%;
+        background-size: cover;
+        content: '';
+        position: absolute;
+        top: 1;
+        left: 0;
+        width: 100%;
+        height:10%;
+        background-image: url(重阳.jpeg);
+        background-size:contain;
+        background-position: center;
+        opacity: 0.4;  
+        z-index: -1;
+        border-radius: 20px; 
+        }
+        .节日9{
+            font-family:"楷体";
+            font-size: 60px;
+            background-repeat: no-repeat;
+            background-size: 10% 10%;
+            color: hsl(46, 97%, 35%); 
+        }
+    #腊八1::before {
+        background-repeat: no-repeat;
+        background-position: center 60%;
+        background-size: cover;
+        content: '';
+        position: absolute;
+        top: 1;
+        left: 0;
+        width: 100%;
+        height:10%;
+        background-image: url(腊八.jpg);
+        background-size:contain;
+        background-position: center;
+        opacity: 0.4;  
+        z-index: -1;
+        border-radius: 20px; 
+        }
+        .节日10{
+            font-family:"楷体";
+            font-size: 60px;
+            background-repeat: no-repeat;
+            background-size: 10% 10%;
+            color: hsl(0, 99%, 53%); 
+        }
+    #除夕1::before {
+        background-repeat: no-repeat;
+        background-position: center 60%;
+        background-size: cover;
+        content: '';
+        position: absolute;
+        top: 1;
+        left: 0;
+        width: 100%;
+        height:10%;
+        background-image: url(除夕.jpg);
+        background-size:contain;
+        background-position: center;
+        opacity: 0.4;  
+        z-index: -1;
+        border-radius: 20px; 
+        }
+    .春节 {
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px auto;
+        width: 80%;
+        width:1400px;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px rgba(1, 1, 1, 0.2);
+        }
+                
+    .元宵 {
+        background: linear-gradient(to right, #f79102a3, #edd206ca);        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px auto;
+        width: 80%;
+        width:1400px;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px rgba(1, 1, 1, 0.2);
+        }   
+    .端午 {
+        background: linear-gradient(to right, #b9ff9397, #e2f20889);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px auto;
+        width: 80%;
+        width:1400px;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px rgba(1, 1, 1, 0.2);
+        } 
+    .七夕 {
+        background: linear-gradient(to right, #c37db247, #f84bb089);  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px auto;
+        width: 80%;
+        width:1400px;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px rgba(1, 1, 1, 0.2);
+        }  
+    .中元 {
+      background: linear-gradient(to right, #7e82ed98, #0c295489);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px auto;
+        width: 80%;
+        width:1400px;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px rgba(1, 1, 1, 0.2);
+        } 
+    .中秋 {
+        background: linear-gradient(to right, #f0ad04bc, #f2e20860);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px auto;
+        width: 80%;
+        width:1400px;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px rgba(1, 1, 1, 0.2);
+        } 
+    .重阳 {
+      background: linear-gradient(to right, #f0f0045b, #f0ad057c);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px auto;
+        width: 80%;
+        width:1400px;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px rgba(1, 1, 1, 0.2);
+        } 
+    .腊八 {
+        background: linear-gradient(to right, #f076046c, #f25208bf);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px auto;
+        width: 80%;
+        width:1400px;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px rgba(1, 1, 1, 0.2);
+        }
+    .除夕 {
+      background: linear-gradient(to right, #fb040492, #f3757560);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px auto;
+        width: 80%;
+        width:1400px;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px rgba(1, 1, 1, 0.2);
+        } 
+    .清明 {
+        background: linear-gradient(to right, #56fb0461, #2a832298);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px auto;
+        width: 80%;
+        width:1400px;
+        border-radius: 20px;
+        box-shadow: 0 8px 25px rgba(1, 1, 1, 0.2);
+        }        
+    </style>
+  </head>
+  <body class="king1">
+    <header>
+      <div class="kaishi1">
+        <h1>一个科普节日的网站</h1>
+        <p id="miiao1">本网站由"一岁"所作</p>
+      </div>
+      <div class="button-container">
+      <a class="头1" href="#春节">春<br>节</a>
+      <a class="头2" href="#元宵">元<br>宵</a>
+      <a class="头3" href="#清明">清<br>明</a>
+      <a class="头4" href="#端午">端<br>午</a>
+      <a class="头5" href="#七夕">七<br>夕</a>
+      <a class="头6" href="#中元">中<br>元</a>
+      <a class="头7" href="#中秋">中<br>秋</a>
+      <a class="头8" href="#重阳">重<br>阳</a>
+      <a class="头9" href="#腊八">腊<br>八</a>
+      <a class="头10" href="#除夕">除<br>夕</a>
+    </div>
+    </header>
+    
+    <div class="text-with-bg">
+      探索中国传统节日与文化庆典<br>
+      让我们一起了解节日的魅力
+    </div>
+    <div class="春节">
+        <div><img height="700px" src="6bff8a70285ec4709d0db98653b4734a3f9bec1984524-rVgDxf.jpg"></div>
+        <div>
+            <a id="春节" class="节日1" target="_blank" href="https://www.bilibili.com/video/BV1riq8YnEHJ/?spm_id_from=333.337.search-card.all.click">春节</a><h3>时间：正月初一</h3><h4 class="故事与由来">故事与由来</h4><p2>春节的起源与上古时代的年兽传说和农耕祭祀传统相关：<br>年兽传说：相传古代有一种叫“年”的怪兽，每逢除夕夜便出来伤人。人们发现“年”惧怕红色、火光和巨响，于是贴红联、放鞭炮驱赶它，逐渐形成习俗。<br>历史演变：春节起源于商周时期的岁末祭祀（“腊祭”），人们感谢神灵祖先，祈求丰收。汉武帝时期将正月初一定为新年，辛亥革命后为区分公历元旦改称“春节”。</p2>
+                <h3 class="主要习俗">主要习俗</h3><p2>年夜饭：除夕夜全家团聚用餐，菜肴寓意吉祥（如鱼象征“年年有余”）。<br>贴春联与福字：门上贴红色对联和倒挂的“福”字，寓意辟邪纳福。<br>守岁与压岁钱：除夕夜彻夜不眠迎接新年，长辈给晚辈发红包（压岁钱）以辟邪祈福。<br>放鞭炮与舞龙舞狮：燃放爆竹驱邪，表演舞龙舞狮增添喜庆。<br>拜年：初一开始走访亲友，互道吉祥话。<br>元宵灯会：正月十五赏花灯、吃汤圆，为春节画上句号。</p2>
+                    <h3 class="文化意义">文化意义</h3><p2>春节不仅是家庭团聚的纽带，更承载着中华民族对自然时序的敬畏、对生活的热望，以及“天人合一”的传统哲学。随着时代发展，春运、春晚、电子红包等新元素融入其中，但节日的核心——对团圆、平安与希望的追求，始终未曾改变。</p2>
+        </div>
+    </div>
+    <div class="春节"><h2 class="古诗"><a target="_blank" href="https://gushicionline.com/tags/%E6%98%A5%E8%8A%82">春节相关的古诗</a></h2><h3>《元日》<br>王安石（宋代）</h3><p>爆竹声中一岁除，春风送暖入屠苏。<br>千门万户曈曈日，总把新桃换旧符。</p></div>
+    <div class="元宵">
+        <div id="元宵1"><img height="729.5px" src="元宵1.png"></div>
+        <div>
+            <a id="元宵" class="节日2" target="_blank" href="https://www.bilibili.com/video/BV1WW421P7SY/?spm_id_from=333.337.search-card.all.click">元宵节</a><h3>时间：正月十五(是春节系列庆祝活动的最后高潮)</h3><h4 class="故事与由来">故事与由来</h4><p2>汉代祭祀说：汉武帝于正月十五祭祀“太一神”（天神），并张灯彻夜，被视为元宵节雏形。<br>佛教传入影响：东汉佛教传入后，正月十五有燃灯表佛的习俗，与本土节庆结合。<br>纪念平吕说：传说汉文帝为庆祝平定“诸吕之乱”（正月十五日），特许民间张灯庆贺，并定为元宵节。<br>道教上元节：道教将正月十五列为“上元天官赐福之日”，进一步丰富了节日内涵。</p2>
+            <h3 class="主要习俗">主要习俗</h3><p2>赏花灯：街头巷尾悬挂各式灯笼，举办灯会，灯谜竞猜增添文人雅趣。<br>吃元宵（汤圆）：用糯米粉包裹馅料制成圆子，寓意家庭团圆、生活甜美。<br>舞龙舞狮：延续春节的社火表演，锣鼓喧天，更显“闹元宵”的热烈。<br>走百病：明清以来，妇女结伴夜游，祈求祛病健康，又称“消百病”。<br>放天灯与焰火：部分地区放飞孔明灯祈福，或燃放烟花庆祝。</p2>
+            <h3 class="文化意义">文化意义</h3><p2>元宵节是春节的华彩终章，融合了祭神祈福、人际团圆、民俗狂欢与艺术审美等多重维度。它打破了古代社会的宵禁与性别限制（古代女子此日可出游），成为全民共享的“狂欢节”。如今，传统灯会与现代科技光影结合，汤圆口味推陈出新，但其核心始终围绕对圆满的向往、对生活的热爱，在灯火与月光交映中，传承着中华文化“圆融和美”的精神内核。</p2>
+        </div>
+    </div>
+    <div class="元宵"><h2 class="古诗"><a target="_blank" href="https://www.gushicimingju.com/gushi/yuanxiao/">元宵节相关的古诗</a></h2><h3>《青玉案·元夕》<br>辛弃疾（宋代）</h3><p>东风夜放花千树，更吹落、星如雨。<br>宝马雕车香满路。凤箫声动，玉壶光转，一夜鱼龙舞。<br>蛾儿雪柳黄金缕，笑语盈盈暗香去。<br>众里寻他千百度，蓦然回首，那人却在，灯火阑珊处。</p></div>
+    <div class="清明">
+        <div id="清明1"><img height="788px" src="清明1.jpg"></div><a id="清明" class="节日3" target="_blank" href="https://www.bilibili.com/video/BV1GT411x7M8/?spm_id_from=333.337.search-card.all.click">清明节</a><h3>时间:通常在公历4月4日至6日之间</h3><h4 class="故事与由来">故事与由来</h4><p2>清明节的起源是节气演变、寒食传说与祭祖传统三者融合的结果：<br>节气起源：“清明”最早是指导农耕的二十四节气之一，《历书》载：“春分后十五日，……万物皆洁齐而清明，盖时当气清景明，万物皆显，因此得名。”<br>寒食节传说：为纪念春秋时期忠臣介子推。晋文公重耳流亡时，介子推曾“割股奉君”。文公即位后，介子推拒受封赏，携母隐居绵山。文公为逼其出山而放火，介子推宁死不出，葬身火海。文公哀痛，下令其忌日（清明前一两日）全国禁火寒食，遂成“寒食节”。<br>习俗融合：唐代起，朝廷将寒食节的祭扫风俗与清明节气合并，形成今日以扫墓、踏青为核心的清明节。</p2>
+        <h3 class="主要习俗">主要习俗</h3><p2>扫墓祭祖（核心习俗）：清理墓地、敬献鲜花食品（传统为酒食、糕点、水果）、焚香烧纸、叩拜行礼。(表达对祖先的感恩与思念，是家族血脉传承的重要仪式。)<br>踏青郊游和插柳/戴柳：春光明媚，人们外出赏花、放风筝、荡秋千、蹴鞠，亲近自然。门前插柳枝或头上戴柳圈，传说有驱疫辟邪、纪念介子推之意。<br>饮食特色：吃青团/艾粿（用艾草汁染色的糯米粉包裹豆沙或莲蓉的绿色糕团，是清明最具代表性的时令食品），馓子、暖菇包等各地特色冷食，延续了寒食传统。</p2>
+        <h3 class="文化意义">文化意义</h3><p2>清明节是中华民族尊重生命、礼敬祖先、顺应自然精神的集中体现。它深刻地将对逝者的缅怀（扫墓）与对生者的祝福（踏青）结合在一起，揭示了中国文化中“生死并置，阴阳相续”的智慧。在现代社会，清明节不仅维系着家族情感与历史记忆，其绿色、环保的祭扫新方式（如网络祭扫、鲜花替代纸钱）和踏青习俗，也引导着人们在与自然的和谐互动中，思考生命的意义与传承的价值。</p2>
+    </div>
+    <div class="清明"><h2 class="古诗"><a target="_blank" href="https://www.gushicimingju.com/gushi/qingming/">清明节相关的古诗</a></h2><h3>《清明》<br>杜牧（唐代）</h3><p>清明时节雨纷纷，路上行人欲断魂。<br>借问酒家何处有？牧童遥指杏花村。</p2></div>
+    <div class="端午">
+        <div id="端午1"><img height="935px" src="端午.png"></div>
+        <div>
+            <a id="端午" class="节日4" target="_blank" href="https://www.bilibili.com/video/BV1Xo7jzFEFH/?spm_id_from=333.337.search-card.all.click">端午节</a><h3>时间：五月初五</h3><h4 class="故事与由来">故事与由来</h4><p2>纪念屈原（流传最广）：战国时期楚国诗人、政治家屈原，因报国无门，于五月初五抱石投汨罗江自尽。百姓哀痛，划船捞救、投粽入江以防鱼虾伤其躯体，演变为后世赛龙舟、吃粽子的习俗。</p2>
+            <h3 class="主要习俗">主要习俗</h3><p2>龙舟竞渡（最具代表性的活动）:多支装饰成龙形的狭长木船，在鼓声指挥下竞速前行。(最初是竞渡救屈原的仪式，后发展为彰显团队协作与拼搏精神的体育竞技。)<br>食粽（标志性饮食）:用箬叶或芦苇叶包裹糯米，可加入豆沙、红枣、鲜肉、蛋黄等馅料，形状多样。(最初投江祭屈原，后成为节令美食。南北风味各异，北方多甜粽，南方多咸粽。)<br>驱邪避疫（体现古老智慧）:“清明插柳，端午插艾”。将艾草和菖蒲捆扎悬挂于门楣，其特殊香气可驱虫避秽。用五彩丝线绣制内装中草药的布袋，佩戴于身，清香驱虫。在儿童手腕、脚腕系上青、白、红、黑、黄五色丝线，寓意辟邪佑安，又称“长命缕”。将雄黄调入酒中饮用或涂抹小儿额耳，以驱毒虫。但需注意雄黄含砷，现代多仅作象征。</p2>
+            <h3 class="文化意义">文化意义</h3><p2>端午节是中华民族精神与生活智慧的高度凝结。它既是对爱国主义诗人屈原的永恒纪念，传承着“亦余心之所善兮，虽九死其犹未悔”的崇高气节；也是一场全民参与的公共卫生运动，体现了古人顺应天时、主动防病的生存智慧；更是一项激昂奋进的体育盛会，龙舟竞渡的鼓声彰显着团结一心、激流勇进的民族性格。如今，端午节已超越国界，成为亚洲多国共享的文化盛事，持续向世界传递着中华文化中刚健有为、敬畏生命、重视人伦的深邃价值。</p2>
+        </div>
+    </div>
+    <div>
+    <div class="端午"><h2 class="古诗"><a target="_blank" href="https://www.gushicimingju.com/gushi/duanwu/">端午节相关的古诗</a></h2><h3>《端午》<br>文秀（唐代）</h3><p>节分端午自谁言，万古传闻为屈原。<br>堪笑楚江空渺渺，不能洗得直臣冤。</p></div>
+    <div class="七夕">
+        <div id="七夕1"><img height="847px" src="七夕.jpg"></div>
+        <div>
+            <a id="七夕" class="节日5" target="_blank" href="https://www.bilibili.com/video/BV1gp4y1E74G/?spm_id_from=333.337.search-card.all.click">七夕节</a><h3>时间：七月初七</h3><h4 class="故事与由来">故事与由来</h4><p2>七夕节的核心来源于牛郎织女的神话传说，其形成经历了漫长的演变：<br>织女是天帝的孙女，擅织云锦天衣。人间孤儿牛郎得老牛（神牛下凡）相助，偷走下凡沐浴的织女的衣裳，两人结为夫妻，男耕女织，育有一双儿女，生活美满。天帝与王母娘娘得知后震怒，命天神抓回织女。牛郎依老牛临终嘱咐，披上牛皮担着儿女急追。王母拔下金簪划出滔滔银河，将二人阻隔。喜鹊被其真情打动，每年七月初七汇聚成鹊桥，使二人得以相会。<br></p2>
+            <h3 class="主要习俗">主要习俗</h3><p2>乞巧:穿针乞巧：女子于月下比赛穿针引线，速度最快者为“得巧”，寓意获得织女的灵巧。投针验巧：将针轻放于水盆中，观察针影形状判断巧拙，若呈云彩、花朵状则为“得巧”。供奉“巧果”：用油、面、糖做成各种花样的点心，既是祭品也是节令食品。陈列瓜果：在庭院陈列瓜果，若有蜘蛛在上面结网，则被视为“得巧”的吉兆。<br>祈愿爱情:拜织女（拜七姐）：少女、少妇们斋戒沐浴，在月光下摆香案，向织女星默祷心愿，祈求美好姻缘或夫妻和睦。储七夕水：传说七夕清晨的河水或井水特别清凉甘甜，久储不腐，可用来制药、酿酒，寓意获得仙女的祝福。接露水：民间认为七夕的露水是牛郎织女相会的眼泪，抹在眼上和手上可使人眼明手巧。现代演变：互赠礼物（尤其是鲜花、巧克力）、共进晚餐、观看爱情电影，已成为当代情侣庆祝七夕的普遍方式。</p2>
+            <h3 class="文化意义">文化意义</h3><p2>七夕节生动展现了中国文化从自然崇拜到人文情感的升华轨迹。它既保留了古代女性追求技艺精湛、实现自我价值的“乞巧”精神，又承载了人们对忠贞不渝、跨越阻隔的爱情理想的永恒赞美。在现代社会，七夕节被赋予了“中国情人节”的新内涵，但其深层文化基因——对“匠心”（巧）与“真心”（情）的双重崇尚——依然深刻。它提醒人们，在最浪漫的星空下，最美好的情感需以坚韧的守候与用心的经营为桥，才能抵达幸福的彼岸。如今，七夕已与西方情人节并立，成为彰显中华文化独特浪漫气质的重要载体。</p2>
+        </div>
+    </div>
+    <div>
+    <div class="七夕"><h2 class="古诗"><a target="_blank" href="https://www.gushiji.cc/qixi/">七夕节相关的古诗</a></h2><h3>《秋夕》<br>杜牧（唐代）</h3><p>银烛秋光冷画屏，轻罗小扇扑流萤。<br>天阶夜色凉如水，卧看牵牛织女星。</p></div>
+    <div class="中元">
+        <div id="中元1"><img height="873px" src="中元.jpeg"></div>
+        <div>
+            <a id="中元" class="节日6" target="_blank" href="https://www.bilibili.com/video/BV1e44y1k7pL/?spm_id_from=333.337.search-card.all.click">中元节</a><h3>时间：七月十五日</h3><h4 class="故事与由来">故事与由来</h4><p2>中元节的起源是儒家孝道、道教教义与佛教仪式在民间信仰层面深度融合的典范：<br>道教“中元地官赦罪说”：道教认为，七月十五是地官大帝的诞辰。这一天，地官会降临人间，考察善恶，并为有罪的亡魂进行赦免与超度。因此，道观会举行盛大的“中元普度”法会，为信众祖先和孤魂野鬼祈福赦罪。<br>佛教“盂兰盆节”说：此说源自《佛说盂兰盆经》中目连救母的故事。故事梗概：佛陀弟子目连（目犍连）以神通看到亡母堕入饿鬼道，受苦不得饮食。他送饭给母亲，饭食却化为火炭。佛陀告知，因其母生前罪孽深重，需借十方僧众在七月十五日（僧众结夏安居结束之日）的功德之力方可拯救。目连依言设斋供养僧众，其母终得解脱。节日形成：佛教徒据此在七月十五举行“盂兰盆会”，以百味饮食供养僧众，以此功德回向现世父母健康长寿、七世父母脱离恶道，体现了深厚的孝亲思想。<br>民间祭祖传统：农历七月，农作物初熟，民间自古有在此时向祖先报告收成、用新米祭祖的习俗，以感谢祖先庇佑，并祈求来年丰收。<br>最终，这三种文化源流在时间（七月十五）和核心（孝道与救赎）上高度契合，共同塑造了今日内容丰富、形式多元的中元节。</p2>
+            <h3 class="主要习俗">主要习俗</h3><p2>中元节习俗的核心是祭祀，对象包括“私”的家族祖先和“公”的无主孤魂，体现了中国人“敬祖”与“慈悲”的双重情怀。<br>家祭（祭祖先）仪式：在家中或祠堂设香案，供奉丰盛的酒菜、时令瓜果、糕点以及纸制的衣物、元宝（纸钱），于傍晚时分举行祭拜仪式，恭请祖先回家享用。烧包（烧袱纸）：将纸钱封成写有祖先名讳的包裹焚烧，意为给祖先“寄”去钱财，是最具代表性的仪式之一。<br>公普（普度孤魂）目的：祭祀无人奉祀的孤魂野鬼（俗称“好兄弟”），避免其作祟，也彰显社区共善的慈悲之心。形式：在社区、街口或庙前设公共祭坛，摆满三层或更多的祭品（从鸡鸭鱼肉到零食水果）。由道士或僧侣主持法会，诵经超度，最后焚烧大量纸钱、纸扎物品（如房屋、车马）供其享用。<br>相关禁忌（民间信仰）由于传说此月“阴气”最盛，民间衍生出许多禁忌，如：夜晚不晾晒衣物、不随意拍人肩膀、不吹口哨、不熬夜、不捡路边的钱等，核心是表达对未知世界的敬畏，避免“冲撞”。</p2>
+            <h3 class="文化意义">文化意义</h3><p2>中元节是中国传统文化中生死观、孝道观与社区伦理的集中体现。它超越了单纯的祖先祭祀，扩展为对一切亡魂的普遍关怀，展现了儒家“老吾老以及人之老”的仁爱精神、佛家的慈悲普度思想以及道教的阴阳和谐观念。这个节日在庄重的仪式中，构建了一个生者与逝者、家族与社区、此岸与彼岸进行对话的独特时空。在现代社会，中元节提醒人们不忘根本、珍视生命、关怀弱者，其蕴含的“慎终追远”与“推己及人”的价值观，对于维系家族情感、促进社区和谐、乃至反思生命意义，仍具有深刻的现实意义。</p2>
+        </div>
+    </div>
+    <div class="中元"><h2 class="古诗"><a target="_blank" href="https://www.gushiwenku.cn/zhongyuanjie/gushi/">中元节相关的古诗</a></h2><h3>《中元日观法事》<br>卢拱（唐代）</h3><p>四孟逢秋序，三元得气中。云迎碧落步，章奏玉皇宫。<br>坛滴槐花露，香飘柏子风。羽衣凌缥缈，瑶毂转虚空。<br>久慕餐霞客，常悲习蓼虫。青囊如可授，从此访鸿蒙。</p></div>
+    <div class="中秋">
+        <div id="中秋1"><img height="787px" src="中秋1.jpg"></div>
+        <div>
+            <a id="中秋" class="节日7" target="_blank" href="https://www.bilibili.com/video/BV1jc4tecEre/?spm_id_from=333.337.search-card.all.click">中秋节</a><h3>时间：八月十五</h3><h4 class="故事与由来">故事与由来</h4><p2>中秋节的起源与月亮崇拜、丰收庆贺紧密相关，并融入了多个脍炙人口的神话传说。<br>起源：由“祭月”到“赏月”上古时代，华夏先民便有在秋分时节祭祀月神的仪式，祈求五谷丰登。《礼记》中即有“天子春朝日，秋夕月”的记载。唐代，赏月、玩月之风在文人墨客中盛行，中秋节开始成为固定的节日。宋代时，中秋节已非常隆重，成为全民性的欢庆佳节。<br>核心神话：嫦娥奔月（流传最广）故事梗概：相传远古时代，天上十日并出，生灵涂炭。英雄后羿射下九日，立下大功，西王母赐其不死仙药。后羿之妻嫦娥，为保护仙药不被坏人夺走，情急之下吞药飞天，最终飘落月亮，成为月宫仙子。后羿思念妻子，便在月圆之夜摆下香案，遥祭嫦娥。百姓感念其夫妻情深，亦纷纷效仿，祈愿团圆。故事衍生：月宫中还有吴刚伐桂（因犯错被罚砍伐永远砍不倒的月桂树）和玉兔捣药（为嫦娥制作长生药）的传说，共同构成了丰富的月宫神话体系。</p2>
+            <h3 class="主要习俗">主要习俗</h3><p2>中秋习俗围绕 “月” 与 “圆” 展开，充满了温馨的家庭氛围和雅致的生活情趣。<br>赏月与祭月（核心活动）家庭赏月：全家团聚于庭院、楼台，一边品尝月饼瓜果，一边欣赏明月，畅叙家常。传统祭月：古代有“女拜月”的习俗，设香案，摆上月饼、西瓜、苹果等祭品，祭拜月神，祈求美貌、智慧或家庭和睦。现代多以赏月代之。<br>吃月饼（标志性饮食）象征：圆形月饼象征着团圆和睦，是节日最重要的食品和礼品。演变：从唐代的“胡饼”到宋代正式得名“月饼”，口味和形制不断丰富，形成广式、苏式、京式等众多流派，馅料也从传统的五仁、豆沙发展到如今的蛋黄、流心、冰皮等创新品种。<br>团圆宴如同除夕的年夜饭，中秋之夜的全家聚餐至关重要，菜品丰盛，寓意阖家圆满。</p2>
+            <h3 class="文化意义">文化意义</h3><p2>中秋节是中华文化“圆融”哲学的极致体现。它不仅是农耕文明对秋收的感恩，更将自然的圆满（月圆）与人文的理想（家圆、事圆）紧密相连。这个节日深刻塑造了中国人的家庭观念和情感表达方式，强调即便身处异地，只要共沐月光，便是精神上的团圆。在现代社会，中秋节的“团圆”内核超越了家庭，扩展为对民族大团结、国家大统一的美好期盼。它如同一轮高悬的文化明月，以其永恒的诗意与温情，持续照亮着人们对和谐、圆满与幸福生活的不懈追求。</p2>
+        </div>
+    </div>
+    </div>
+    <div class="中秋"><h2 class="古诗"><a target="_blank" href="https://www.gushiji.cc/zhongqiu/">中秋节相关的古诗</a></h2><h3>《水调歌头·明月几时有》<br>苏轼（宋代）</h3><p>明月几时有？把酒问青天。不知天上宫阙，今夕是何年。我欲乘风归去，又恐琼楼玉宇，高处不胜寒。起舞弄清影，何似在人间。<br>久慕餐霞客，常悲习蓼虫。青囊如可授，从此访鸿蒙。<br>转朱阁，低绮户，照无眠。不应有恨，何事长向别时圆？人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共婵娟。</p></div>
+    <div class="重阳">
+        <div id="重阳1"><img height="788px" src="重阳.jpeg"></div>
+        <div>
+            <a id="重阳" class="节日8" target="_blank" href="https://www.bilibili.com/video/BV1cq4y157EL/?spm_id_from=333.337.search-card.all.click">重阳节</a><h3>时间:九月初九</h3><h4 class="故事与由来">故事与由来</h4><p2>重阳节的起源与自然崇拜、时令禁忌及历史传说紧密相连。<br>源头：火神崇拜与“阳极必变”：上古有“九月祭火（大火星）”仪式，标志着季秋农事结束与潜在灾祸的到来。古人认为九月九日阳气极盛，是“阳极必变”的凶日，需举行仪式避灾。<br>传说定型：桓景避灾（东汉《续齐谐记》）故事梗概：相传东汉汝南人桓景，受仙人费长房指点，得知九月初九家中将有灾祸。他携全家人臂系茱萸香囊，登高避祸，饮菊花酒。傍晚归家，见家中鸡犬牛羊皆暴毙。费长房告知，此乃代人受灾。此后，登高、佩茱萸、饮菊花酒便成为重阳辟邪的固定习俗。<br>皇家推动与文人雅化：唐代，重阳节被正式定为节日，宫廷民间皆盛行。文人墨客的登高赋诗，极大地丰富了节日的文化内涵，使之从“避祸”的原始主题，升华出“咏怀”、“思乡”等高雅情感。</p2>
+            <h3 class="主要习俗">主要习俗</h3><p2>重阳习俗可分为两大主线：登高避祸的古老传统与敬老怀秋的雅致生活。<br>登高（核心习俗）形式：全家或友人结伴攀登高山、高塔。此俗最初为躲避灾祸，后演变为强身健体、舒展胸怀、亲近自然的秋游活动。<br>赏菊与饮菊花酒赏菊：菊花凌霜而开，被视为长寿、高洁的象征。举办菊花会、赏菊咏菊是重要风雅之事。饮菊花酒：用菊花和粮食酿制，古称“长寿酒”，寓意祛灾祈福、延年益寿。<br>佩茱萸将茱萸（一种香气辛烈的植物）枝叶或果实装入香囊佩于臂，或直接插在头上。古人相信茱萸可辟邪驱虫、抵御初寒，故重阳节也称“茱萸节”。<br>吃重阳糕“糕”与“高”谐音，寓意“步步高升”。人们用米粉、果料蒸制，色彩艳丽。登高时食用，亦有“登高吃糕”的吉祥意味。<br>敬老（现代核心内涵）自1989年起，中国政府将农历九月初九定为 “老年节” （敬老节）。传统重阳的“祈寿”文化被赋予了新的时代意义。各地广泛开展慰问老人、组织文化活动、倡导孝亲敬老等社会活动，使重阳节成为弘扬中华民族尊老敬老传统美德的重要载体。</p2>
+            <h3 class="文化意义">文化意义</h3><p2>重阳节完美诠释了中华文化 “化危为机、由俗入雅” 的智慧。它最初源于对自然时序的敬畏与避灾的朴素愿望，却在历史长河中，经由文人的诗意点化和民族的伦理升华，逐渐演变为一个颂扬生命韧性（登高）、赞美高尚品格（赏菊）、践行孝道伦理（敬老） 的复合型节日。现代重阳节，更以其法定的“敬老节”身份，将传统孝道从家庭伦理扩展为社会公德，强调对长者生命经验和精神财富的尊重。它提醒人们，在人生的秋天，亦能如菊花般灿烂，如登高般望远，在生命的每个阶段都追求健康、尊严与价值。</p2>
+        </div>
+    </div>
+    <div class="重阳"><h2 class="古诗"><a target="_blank" href="https://www.gushicimingju.com/gushi/chongyang/">重阳节相关的古诗</a></h2><h3>《九月九日忆山东兄弟》<br>王维（唐代）</h3><p>独在异乡为异客，每逢佳节倍思亲。<br>遥知兄弟登高处，遍插茱萸少一人。</p></div>
+    <div class="腊八">
+        <div id="腊八1"><img height="875px" src="腊八.jpg"></div>
+        <div>
+            <a id="腊八" class="节日9" target="_blank" href="https://www.bilibili.com/video/BV1txrmYdESV/?spm_id_from=333.337.search-card.all.click">腊八节</a><h3>时间：腊月初八</h3><h4 class="故事与由来">故事与由来</h4><p2>腊八节的起源复杂多元，是华夏上古祭祀传统、农耕文明与佛教文化相互融合的结晶。<br>上古祭祀（“腊日”起源）：腊八节直接源于先秦的 “腊祭” 。《礼记·郊特牲》记载：“岁十二月，合聚万物而索飨之也。”即在岁末农闲时，人们汇聚一年收获之物，举行盛大祭祀，报祭天地神灵、祖先，并祈求来年风调雨顺。这一天最初并不固定，汉代后才逐渐定在腊月初八。<br>佛教故事（“法宝节”传说）：佛教传入后，为腊八节增添了重要的故事内核。故事梗概：相传释迦牟尼佛在成道前，曾苦行多年，形销骨立。后接受牧女用多种谷物、野果熬制的乳糜（粥） 供养，体力恢复，于腊月初八在菩提树下悟道成佛。因此，腊八在佛教中被称为 “法宝节” 或 “成道会” 。寺院在此日诵经、煮粥供佛并施舍给信众和贫苦百姓，此即 “腊八粥”（又称“佛粥”）习俗的重要来源。<br>最终，本土的岁终“腊祭”与佛教的“成道纪念”在时间与内涵上（都包含感恩与祈福）相结合，形成了以“喝腊八粥”为标志的综合性节日。</p2>
+            <h3 class="主要习俗">主要习俗</h3><p2>腊八节的习俗围绕着 “祭祀”、“饮食”与“迎新” 展开。<br>喝腊八粥（核心与标志）材料与象征：用多种米（大米、糯米）、豆（红豆、绿豆）、干果（红枣、莲子、核桃、栗子）、杂粮等至少八种食材熬制而成，寓意 “合聚万物、调和千灵” ，有感恩一年收获、祈求富足圆满之意。仪式感：传统上，腊月初七夜里便开始熬制，全家在初八清晨共同食用。要先敬神祭祖，再馈赠亲友邻里，最后全家分食。此俗体现了 “分享”与“节俭” 的美德。<br>祭祀祭祖：在宗祠或家中举行仪式，以腊八粥和新收的粮食祭祀祖先。祭神：祭祀门神、户神、宅神、灶神等，以感谢其护佑，并祈求来年继续保佑家宅平安。<br>制作腊八蒜做法：华北地区流行将剥皮的蒜瓣浸泡在米醋中，密封至除夕开封。特点：蒜瓣会变得通体碧绿，如同翡翠，醋则带有蒜香。腊八蒜是春节吃饺子时的绝佳佐料。</p2>
+            <h3 class="文化意义">文化意义</h3><p2>腊八节是中华文明 “天人合一” 与 “慎终追远” 观念的生动体现。它既是一场对自然馈赠和祖先恩泽的盛大感恩仪式，也拉开了迎接新春的序幕，标志着中国人从物质（备年货）到精神（祭祖敬神）全面进入“忙年”阶段。一碗腊八粥，浓缩了丰收的喜悦、节俭的美德、分享的温情以及对健康的祈愿。在佛教文化的浸润下，它更增添了慈悲普度的精神内涵。时至今日，腊八节虽然规模不及春节，但它所蕴含的感恩、分享与迎新内核，依然在寒冬中传递着温暖，提醒人们在享受现代生活的同时，不忘传统、珍惜食物、关爱邻里，并以一种充满仪式感的方式，迎接新春的到来。</p2>
+        </div>
+    </div>
+    <div class="腊八"><h2 class="古诗"><a target="_blank" href="https://www.gushicimingju.com/gushi/labajie/">腊八节相关的古诗</a></h2><h3>《十二月八日步至西村》<br>陆游（宋代）</h3><p>腊月风和意已春，时因散策过吾邻。<br>草烟漠漠柴门里，牛迹重重野水滨<br>多病所须惟药物，差科未动是闲人。<br>今朝佛粥更相馈，更觉江村节物新。</p></div>
+    <div class="除夕">
+        <div id="除夕1"><img height="910px" src="除夕.jpg"></div>
+        <div>
+            <a class="节日10" target="_blank" href="https://www.bilibili.com/video/BV1Ja4y1i7hx/?spm_id_from=333.337.search-card.all.click">除夕</a><h3>时间：腊月二十九或三十</h3><h4 id="除夕"  class="故事与由来">故事与由来</h4><p2>除夕的习俗主要源于古代驱邪避害的仪式和对时间更替的敬畏，后融合为家庭伦理的庆典。<br>“年兽”传说（民间流传最广）故事梗概：与春节起源共享同一个传说。一种名为“年”的凶猛怪兽，每到除夕夜便出来害人。人们发现“年”惧怕红色、火光和巨响，于是家家户户贴红对联、燃放爆竹、彻夜点灯守岁，以驱赶年兽。这些习俗便流传下来，成为除夕的标志性活动。<br>“逐除”与“傩仪”先秦时期，有在岁末举行 “大傩” 的仪式，即由人扮演方相氏，带领众人击鼓呐喊，驱逐疫鬼，称为“逐除”，这是除夕“驱邪”传统的直接源头。<br>祭祖与团聚的伦理核心除夕祭祖是汉族流传至今的重要风俗，源于“百善孝为先”的传统观念。在辞旧迎新之际，感念祖先庇佑，并将家族成员凝聚在一起，共享团圆饭，强化血缘纽带。</p2>
+            <h3 class="主要习俗">主要习俗</h3><p2>除夕的习俗流程如同一场盛大的家庭仪式，环环相扣，充满象征意义。<br>团圆饭（年夜饭）核心意义：一年中最重要的一顿饭，要求家庭成员尽可能到齐。饭桌上有鱼（寓意“年年有余”）、鸡（寓意“吉祥如意”）、饺子（形似元宝，寓意“更岁交子”）、年糕（寓意“年年高升”）等具有吉祥寓意的菜肴。<br>祭祖在享用年夜饭前，许多家庭会先举行祭祖仪式，摆上丰盛的饭菜酒食，请祖先“回家”过年，表达慎终追远的孝思。<br>贴年红在除夕下午或傍晚，家家户户会贴上春联、门神、福字和窗花，以红色喜庆迎接新年，也有镇邪驱鬼的古老寓意。<br>压岁钱年夜饭后，长辈将事先准备好的压岁钱分给晚辈。“岁”与“祟”谐音，压岁钱寓意着压住邪祟，保佑孩子平安度过一年。钱通常放在红包（利是封）中。<br>守岁核心活动：全家团聚，通宵不眠，灯火长明，一起迎接农历新年的到来。这既象征着对逝去岁月的珍惜，也寓意着为长辈祈福延寿（“守岁”即“守寿”）。如今，观看中央电视台春节联欢晚会已成为现代中国家庭守岁的重要方式。<br>燃放爆竹在新旧年交替的子时（午夜零时） ，家家户户燃放烟花爆竹，以响亮的爆竹声驱除晦气，迎接新年。出于环保和安全考虑，许多城市已禁放或限放。</p2>
+            <h3 class="文化意义">文化意义</h3><p2>除夕是中华文化中家庭伦理与社会时间观的集中体现。它通过一系列高度仪式化的活动，完成了从旧年到新年的神圣过渡。这不仅仅是一个时间节点，更是一个情感的枢纽：它召唤散居各处的家人回归，强化血缘认同；它通过祭祖连接过去与未来，强调文化的传承；它用欢声笑语和通明灯火，对抗对时间流逝和未知命运的焦虑，凝聚起迎接新生的集体勇气。在现代社会，尽管一些习俗形式（如看春晚替代传统守岁活动）发生变化，但除夕 “团圆、祈福、迎新” 的核心价值从未动摇。它是中国人情感日历上最浓墨重彩的一笔，是无论身在何处都心向往之的精神归宿，深刻定义了“家”的意义和“年”的味道。</p2>
+        </div>
+    </div>
+    <div class="除夕"><h2 class="古诗"><a target="_blank" href="https://www.gushicimingju.com/gushi/chuxi/">除夕相关的古诗</a></h2><h3>《除夜作》<br>高适（唐代）</h3><p>旅馆寒灯独不眠，客心何事转凄然。<br>故乡今夜思千里，霜鬓明朝又一年。</p></div>
+    <footer style="margin-top: 100px; padding: 20px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: #000;">
+      <p>© 2025 "一岁"作</p>
+    </footer>
+  </body>
+</html>
